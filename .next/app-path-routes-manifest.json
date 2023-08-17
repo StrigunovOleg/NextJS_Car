@@ -1,5 +1,6 @@
 {
-  "/page": "/",
   "/favicon.ico/route": "/favicon.ico",
+  "/page": "/",
+  "/used/page": "/used",
   "/about/page": "/about"
 }

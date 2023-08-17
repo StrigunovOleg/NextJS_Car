@@ -1,12 +1,9 @@
-import Image from 'next/image'
-import Link from 'next/link'
 
 export default function Header() {
     return (
-
         <nav className="bg-white border-gray-200 dark:bg-black">
-            <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-                <a href="#" className="flex items-center">
+            <div className="container xl mx-auto flex flex-wrap items-center justify-between mx-auto p-4">
+                <a href="./" className="flex items-center">
                     <img src="https://flowbite.com/docs/images/logo.svg" className="h-8 mr-3" alt="Flowbite Logo" />
                     <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white" >
                         CarzChina
@@ -47,6 +44,5 @@ export default function Header() {
                 </div>
             </div>
         </nav>
-
     )
 }

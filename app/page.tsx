@@ -1,13 +1,14 @@
 import Header from './header'
 import Footer from './footer'
 import Slider from './slider'
+import Link from 'next/link'
 
 
 export default function Home() {
   return (
     <>
       <Header />
-      {/* SUBJECT */}
+      {/* WELCOME */}
       <div>
         <h1 className="text-center mt-8 mb-4 text-4xl font-extrabold leading-normal tracking-tight text-gray-900 md:text-5xl lg:text-6xl dark:text-black">
           ЗАКАЖИ СВОЙ  <span className="text-blue-700 dark:text-colorSite">АВТОМОБИЛЬ</span>
@@ -22,7 +23,7 @@ export default function Home() {
         {/* CARDS */}
         <div className='p-4 flex w-full flex-col md:flex-row gap-6'>
           {/* genearal card */}
-          <div className='w-3/5 shrink-0 bg-gray-200 p-6 rounded-lg'>
+          <Link href="./used" className='w-3/5 shrink-0 bg-gray-200 p-6 rounded-lg'>
             <div className='flex items-center justify-between'>
               <h4 className="text-2xl font-bold dark:text-black">
                 ВЫБРАТЬ ПОДДЕРЖАНЫЙ АВТОМОБИЛЬ
@@ -32,7 +33,7 @@ export default function Home() {
               </svg>
             </div>
             <img className="h-auto max-w-full" src="https://lrxqrmfzyehktopsnyot.supabase.co/storage/v1/object/public/core/main_page/bu.png" alt="ПОДДЕРЖАНЫЕ АВТОМОБИЛИ"></img>
-          </div>
+          </Link>
           {/* subs cards */}
           <div className='flex gap-4 flex-col w-full'>
             {/* new cars */}
