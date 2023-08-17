@@ -5,6 +5,7 @@ import { cookies } from 'next/dist/client/components/headers'
 export const dynamic = 'force-dynamic'
 import type { Database } from '@/database.types'
 
+// new comment
 
 export default async function About() {
     const supabase = createServerComponentClient<Database>({ cookies })
